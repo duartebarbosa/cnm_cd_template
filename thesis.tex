@@ -1,0 +1,47 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     This file should not be altered                                  %
+%     To see what other .tex files search for TODO word                %
+%     If more chapters are required, add more \inputs{file} commands   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,a4paper]{report}
+
+% TODO - change this with your external packages (if required)
+\input{preamble}
+
+\begin{document}
+
+% Set plain page style (no headers, footer with centered page number)
+\pagestyle{plain}
+
+% TODO Define your cover page
+\thispagestyle {empty}
+
+% IST Logo
+% parameters: bb=llx lly urx ury (bounding box), width=h_length, height=v_length, angle=angle, scale=factor, clip=true/false, draft=true/false. 
+\includegraphics[width=3.0cm]{Figures/Logo.png}
+
+\begin{center}
+	
+	% Title, author and degree
+	{\FontSn \textbf{put the title here}} \\
+	{\FontSn put the subtitle here} \\
+	\vspace{0.7cm}
+	{\FontSn \textbf{put your name here}} \\
+	\vspace{0.7cm}
+	{\FontSn Thesis to obtain the Master of Science Degree in} \\
+	{\FontSn \textbf{put the name of your degree here}} \\
+	\vspace{0.7cm}
+	{\FontSm %
+		put the name of your supervisor here \\
+		% or potentially supervisors if you have more than one \\
+	}
+	%
+	\vspace{0.1cm}
+	{\FontSm \textbf{put the date here}} \\
+\end{center}
+
+\cleardoublepage
+
+\restoregeometry
+
+\end{document}
